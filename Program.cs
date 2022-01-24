@@ -23,7 +23,7 @@ namespace readLetterFromWebsite
             //4. Set up pattern recognitions to only get the article and Clean the data that scraped.
             string data = (await getData()).ToUpper();
             int endIndex = 0;
-            if ((endIndex = data.IndexOf("TAGS :")) != -1)
+            if ((endIndex = data.IndexOf("TAGS :")) != -1) 
             {
                 data = data.Substring(0, endIndex);
             }
